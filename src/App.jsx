@@ -124,6 +124,7 @@ const App = () => {
             "Redesign Klinik Budhi Pratama",
             "The Jek",
             "Japan Trip",
+            "Laundryku",
           ].map((title, index) => (
             <div
               key={index}
@@ -142,56 +143,60 @@ const App = () => {
           ))}
         </div>
       </section>
+      <section id="contact">
+        <footer className="bg-orange-500 text-white py-10 px-6">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10">
+            {/* Kiri: Nama / Info */}
+            <div className="text-center md:text-left">
+              <h2 className="text-xl font-bold">Faza Portofolio</h2>
+              <p className="text-sm">
+                © {new Date().getFullYear()} All rights reserved.
+              </p>
+            </div>
 
-      {/* Footer */}
-      <footer className="bg-orange-500 text-white py-10 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10">
-          {/* Kiri: Nama / Info */}
-          <div className="text-center md:text-left">
-            <h2 className="text-xl font-bold">Faza Portofolio</h2>
-            <p className="text-sm">
-              © {new Date().getFullYear()} All rights reserved.
-            </p>
-          </div>
-
-          {/* Kanan: Kontak */}
-          <div className="flex justify-center md:justify-end">
-            <div className="flex gap-3 flex-col">
-              <strong>
-                <h1>Contact Me</h1>
-              </strong>
-              <div className="flex gap-2 items-center">
-                <img src="images/icons/mail.png" className="w-6 h-4" alt="" />
-                <p>
-                  <strong>Email:</strong> fazaalega14@gmail.com
-                </p>
-              </div>
-              <div className="flex gap-2 items-center">
-                <img
-                  src="images/icons/telepon.png"
-                  className="w-6 h-4"
-                  alt=""
-                />
-                <p>
-                  <strong>Phone:</strong> +62 xxx-xxx-xxx
-                </p>
-              </div>
-              <div className="flex gap-2 items-center">
-                <img src="images/icons/ig-2.png" className="w-6 h-5" alt="" />
-                <p>
-                  <strong>Instagram:</strong> @fazaalega
-                </p>
-              </div>
-              <div className="flex gap-2 items-center">
-                <img src="images/icons/link-2.png" className="w-6 h-6" alt="" />
-                <p>
-                  <strong>Linkedin:</strong> Faza Alega Yahya
-                </p>
+            {/* Kanan: Kontak */}
+            <div className="flex justify-center md:justify-end">
+              <div className="flex gap-3 flex-col">
+                <strong>
+                  <h1>Contact Me</h1>
+                </strong>
+                <div className="flex gap-2 items-center">
+                  <img src="images/icons/mail.png" className="w-6 h-4" alt="" />
+                  <p>
+                    <strong>Email:</strong> fazaalega14@gmail.com
+                  </p>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <img
+                    src="images/icons/telepon.png"
+                    className="w-6 h-4"
+                    alt=""
+                  />
+                  <p>
+                    <strong>Phone:</strong> +62 xxx-xxx-xxx
+                  </p>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <img src="images/icons/ig-2.png" className="w-6 h-5" alt="" />
+                  <p>
+                    <strong>Instagram:</strong> @fazaalega
+                  </p>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <img
+                    src="images/icons/link-2.png"
+                    className="w-6 h-6"
+                    alt=""
+                  />
+                  <p>
+                    <strong>Linkedin:</strong> Faza Alega Yahya
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </section>
     </div>
   );
 };
